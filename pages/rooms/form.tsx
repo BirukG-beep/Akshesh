@@ -15,12 +15,12 @@ const Form = ({ setShowForm }: { setShowForm: React.Dispatch<React.SetStateActio
           @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap');
 
           :root {
-            --gold: #c8a96e;
-            --gold-light: #e4c48b;
-            --ink: #0f0e0c;
-            --text: #f0e8da;
-            --muted: #9c8d7a;
-            --border: rgba(200,169,110,0.14);
+            --gold: #a8895f;
+            --gold-light: #b1813f;
+            --ink: #ffffff;
+            --text: #1a1814;
+            --muted: #7a7066;
+            --border: rgba(180,140,80,0.18);
           }
 
           * {
@@ -59,10 +59,10 @@ const Form = ({ setShowForm }: { setShowForm: React.Dispatch<React.SetStateActio
             background:
               radial-gradient(
                 circle at top,
-                rgba(200,169,110,0.08),
+                rgba(180,140,80,0.08),
                 transparent 30%
               ),
-              #0f0e0c;
+              #ffffff;
 
             font-family: 'DM Sans', sans-serif;
           }
@@ -74,7 +74,7 @@ const Form = ({ setShowForm }: { setShowForm: React.Dispatch<React.SetStateActio
             max-width: 520px;
 
             background:
-              rgba(15,14,12,0.55);
+              rgba(255,255,255,0.85);
 
             border:
               1px solid var(--border);
@@ -86,7 +86,7 @@ const Form = ({ setShowForm }: { setShowForm: React.Dispatch<React.SetStateActio
             overflow: hidden;
 
             box-shadow:
-              0 15px 60px rgba(0,0,0,0.45);
+              0 15px 60px rgba(0,0,0,0.10);
           }
 
           .booking-top {
@@ -94,7 +94,7 @@ const Form = ({ setShowForm }: { setShowForm: React.Dispatch<React.SetStateActio
               2rem 2rem 1.5rem;
 
             border-bottom:
-              1px solid rgba(200,169,110,0.1);
+              1px solid rgba(180,140,80,0.15);
           }
 
           .booking-label {
@@ -161,10 +161,10 @@ const Form = ({ setShowForm }: { setShowForm: React.Dispatch<React.SetStateActio
             border-radius: 18px;
 
             border:
-              1px solid rgba(200,169,110,0.12);
+              1px solid rgba(180,140,80,0.18);
 
             background:
-              rgba(255,255,255,0.03);
+              #ffffff;
 
             color: var(--text);
 
@@ -179,14 +179,14 @@ const Form = ({ setShowForm }: { setShowForm: React.Dispatch<React.SetStateActio
             border-color: var(--gold);
 
             background:
-              rgba(255,255,255,0.05);
+              #ffffff;
 
             box-shadow:
-              0 0 0 4px rgba(200,169,110,0.08);
+              0 0 0 4px rgba(180,140,80,0.1);
           }
 
           .form-group input::placeholder {
-            color: #857864;
+            color: #b0a594;
           }
 
           .date-grid {
@@ -210,7 +210,7 @@ const Form = ({ setShowForm }: { setShowForm: React.Dispatch<React.SetStateActio
 
             background: var(--gold);
 
-            color: var(--ink);
+            color: #ffffff;
 
             cursor: pointer;
 

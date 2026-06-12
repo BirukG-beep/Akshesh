@@ -48,7 +48,7 @@ export default function RosmeryHotelCards() {
         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap');
 
         .Rosmery-section {
-          background: #0f0e0c;
+          background: #ffffff;
           padding: 5rem 1.5rem 6rem;
           font-family: 'DM Sans', sans-serif;
           font-weight: 300;
@@ -70,7 +70,7 @@ export default function RosmeryHotelCards() {
           font-size: 0.68rem;
           letter-spacing: 0.3em;
           text-transform: uppercase;
-          color: #7a6142;
+          color: #a8895f;
           margin-bottom: 1rem;
         }
 
@@ -79,18 +79,18 @@ export default function RosmeryHotelCards() {
           font-size: clamp(2.4rem, 5vw, 3.8rem);
           font-weight: 300;
           line-height: 1.1;
-          color: #f0e8da;
+          color: #1a1814;
           margin-bottom: 1.2rem;
         }
 
         .Rosmery-title em {
           font-style: italic;
-          color: #e2c99a;
+          color: #b1813f;
         }
 
         .Rosmery-subtitle {
           font-size: 0.92rem;
-          color: #9c8d7a;
+          color: #7a7066;
           max-width: 520px;
           margin: 0 auto;
           line-height: 1.8;
@@ -111,8 +111,8 @@ export default function RosmeryHotelCards() {
         }
 
         .Rosmery-card {
-          background: #1e1c19;
-          border: 1px solid rgba(200,169,110,0.12);
+          background: #faf8f4;
+          border: 1px solid rgba(180,140,80,0.15);
           border-radius: 20px;
           padding: 2.2rem 2rem;
           transition: border-color 0.25s ease, transform 0.25s ease, background 0.25s ease;
@@ -120,8 +120,8 @@ export default function RosmeryHotelCards() {
         }
 
         .Rosmery-card:hover {
-          border-color: rgba(200,169,110,0.28);
-          background: #222019;
+          border-color: rgba(180,140,80,0.35);
+          background: #f5f1e9;
           transform: translateY(-3px);
         }
 
@@ -129,39 +129,39 @@ export default function RosmeryHotelCards() {
           width: 48px;
           height: 48px;
           border-radius: 12px;
-          border: 1px solid rgba(200,169,110,0.15);
-          background: rgba(200,169,110,0.05);
+          border: 1px solid rgba(180,140,80,0.2);
+          background: rgba(180,140,80,0.06);
           display: flex;
           align-items: center;
           justify-content: center;
-          color: #c8a96e;
+          color: #a8895f;
           margin-bottom: 1.6rem;
           transition: background 0.2s, border-color 0.2s;
         }
 
         .Rosmery-card:hover .Rosmery-card-icon {
-          background: rgba(200,169,110,0.1);
-          border-color: rgba(200,169,110,0.3);
+          background: rgba(180,140,80,0.12);
+          border-color: rgba(180,140,80,0.4);
         }
 
         .Rosmery-card-title {
           font-family: 'Cormorant Garamond', serif;
           font-size: 1.45rem;
           font-weight: 400;
-          color: #f0e8da;
+          color: #1a1814;
           margin-bottom: 0.9rem;
           line-height: 1.2;
         }
 
         .Rosmery-card-body {
           font-size: 0.875rem;
-          color: #9c8d7a;
+          color: #7a7066;
           line-height: 1.85;
         }
 
         .Rosmery-divider {
           height: 1px;
-          background: linear-gradient(to right, transparent, rgba(200,169,110,0.12), transparent);
+          background: linear-gradient(to right, transparent, rgba(180,140,80,0.25), transparent);
           margin: 0 auto 4rem;
           max-width: 320px;
         }

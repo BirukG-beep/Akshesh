@@ -22,10 +22,10 @@ export default function BlogSection() {
         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap');
 
         .blog-section {
-          background: #0f0e0c;
+          background: #ffffff;
           padding: 5rem 1.5rem 6rem;
           font-family: 'DM Sans', sans-serif;
-          color: #f0e8da;
+          color: #1a1814;
         }
 
         .blog-inner {
@@ -45,7 +45,7 @@ export default function BlogSection() {
         }
 
         .blog-subtitle {
-          color: #9c8d7a;
+          color: #7a7066;
           margin-top: 1rem;
         }
 
@@ -74,7 +74,7 @@ export default function BlogSection() {
         .blog-image {
           border-radius: 24px;
           overflow: hidden;
-          border: 1px solid rgba(200,169,110,0.12);
+          border: 1px solid rgba(180,140,80,0.18);
         }
 
         .blog-image img {
@@ -96,25 +96,25 @@ export default function BlogSection() {
           font-family: 'Cormorant Garamond', serif;
           font-size: 1.8rem;
           margin-bottom: 1rem;
-          color: #f0e8da;
+          color: #1a1814;
         }
 
         .blog-desc {
-          color: #9c8d7a;
+          color: #7a7066;
           line-height: 1.8;
         }
 
         .blog-btn {
           margin-top: 1.5rem;
           display: inline-block;
-          color: #c8a96e;
+          color: #a8895f;
           font-weight: 500;
           cursor: pointer;
           transition: 0.3s ease;
         }
 
         .blog-btn:hover {
-          color: #e2c99a;
+          color: #b1813f;
         }
       `}</style>
 
@@ -124,7 +124,7 @@ export default function BlogSection() {
           {/* HEADER */}
           <div className="blog-header">
             <h2 className="blog-title">
-              Latest <span style={{ color: "#c8a96e" }}>Blog</span>
+              Latest <span style={{ color: "#a8895f" }}>Blog</span>
             </h2>
             <p className="blog-subtitle">
               Travel tips, guides, and Akshesh Hotel updates.

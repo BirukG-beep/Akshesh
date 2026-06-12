@@ -11,7 +11,7 @@ const DynamicMapContent = dynamic(
         style={{
           width: '100%',
           height: '100vh',
-          background: '#0f0e0c',
+          background: '#ffffff',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',

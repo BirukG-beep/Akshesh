@@ -1,5 +1,5 @@
 // pages/rooms/[slug].tsx
-// Enhanced UI — Luxury Editorial Aesthetic
+// Enhanced UI — Luxury Editorial Aesthetic (White Version)
 
 import { useRouter } from "next/router";
 import { ArrowLeft, Users, Wifi, Star, CheckCircle, Clock, Shield, ChevronRight } from "lucide-react";
@@ -88,7 +88,7 @@ export default function RoomPage() {
 
   if (!slug || typeof slug !== "string") {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-[#0f0e0c] text-[#c8b79a]">
+      <div className="min-h-screen flex items-center justify-center bg-[#ffffff] text-[#a8895f]">
         <span className="tracking-[0.3em] text-sm uppercase">Loading…</span>
       </div>
     );
@@ -97,7 +97,7 @@ export default function RoomPage() {
   const room = rooms[slug as keyof typeof rooms];
   if (!room) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-[#0f0e0c] text-[#c8b79a] text-xl">
+      <div className="min-h-screen flex items-center justify-center bg-[#ffffff] text-[#a8895f] text-xl">
         Room not found
       </div>
     );
@@ -109,19 +109,19 @@ export default function RoomPage() {
         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap');
 
         :root {
-          --gold: #c8a96e;
-          --gold-light: #e2c99a;
-          --gold-dim: #7a6142;
-          --ink: #0f0e0c;
-          --ink-2: #1a1916;
-          --ink-3: #252320;
-          --surface: #1e1c19;
-          --surface-2: #272420;
-          --border: rgba(200,169,110,0.12);
-          --border-hover: rgba(200,169,110,0.28);
-          --text-primary: #f0e8da;
-          --text-secondary: #9c8d7a;
-          --text-muted: #5c5248;
+          --gold: #a8895f;
+          --gold-light: #b1813f;
+          --gold-dim: #c9a876;
+          --ink: #ffffff;
+          --ink-2: #fbfaf8;
+          --ink-3: #f5f1e9;
+          --surface: #faf8f4;
+          --surface-2: #f5f1e9;
+          --border: rgba(180,140,80,0.15);
+          --border-hover: rgba(180,140,80,0.35);
+          --text-primary: #1a1814;
+          --text-secondary: #7a7066;
+          --text-muted: #a39a8e;
         }
 
         *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -144,7 +144,7 @@ export default function RoomPage() {
           transition: all 0.4s ease;
         }
         .nav.scrolled {
-          background: rgba(15,14,12,0.85);
+          background: rgba(255,255,255,0.85);
           backdrop-filter: blur(24px);
           border-bottom: 1px solid var(--border);
           padding: 1rem 2rem;
@@ -155,7 +155,7 @@ export default function RoomPage() {
           padding: 0.6rem 1.4rem;
           border: 1px solid var(--border);
           border-radius: 100px;
-          background: rgba(255,255,255,0.03);
+          background: rgba(0,0,0,0.02);
           color: var(--text-secondary);
           font-size: 0.78rem;
           letter-spacing: 0.1em;
@@ -166,14 +166,14 @@ export default function RoomPage() {
         .back-btn:hover {
           border-color: var(--border-hover);
           color: var(--gold-light);
-          background: rgba(200,169,110,0.05);
+          background: rgba(180,140,80,0.06);
         }
 
         .nav-tag {
           font-size: 0.7rem;
           letter-spacing: 0.2em;
           text-transform: uppercase;
-          color: var(--gold-dim);
+          color: var(--gold-light);
           padding: 0.4rem 1rem;
           border: 1px solid var(--border);
           border-radius: 100px;
@@ -203,10 +203,10 @@ export default function RoomPage() {
           position: absolute; inset: 0;
           background: linear-gradient(
             to bottom,
-            rgba(15,14,12,0.25) 0%,
-            rgba(15,14,12,0.15) 35%,
-            rgba(15,14,12,0.65) 65%,
-            rgba(15,14,12,0.97) 100%
+            rgba(255,255,255,0.15) 0%,
+            rgba(255,255,255,0.1) 35%,
+            rgba(255,255,255,0.7) 65%,
+            rgba(255,255,255,0.98) 100%
           );
         }
 
@@ -279,12 +279,13 @@ export default function RoomPage() {
         /* RATING CHIP */
         .rating-chip {
           position: absolute; top: 6.5rem; right: 2.5rem;
-          background: rgba(15,14,12,0.7);
+          background: rgba(255,255,255,0.85);
           backdrop-filter: blur(20px);
           border: 1px solid var(--border);
           border-radius: 20px;
           padding: 1rem 1.4rem;
           text-align: center;
+          box-shadow: 0 8px 24px rgba(0,0,0,0.06);
         }
         .rating-score {
           font-size: 2rem;
@@ -331,7 +332,7 @@ export default function RoomPage() {
           font-size: 0.68rem;
           letter-spacing: 0.3em;
           text-transform: uppercase;
-          color: var(--gold-dim);
+          color: var(--gold-light);
           margin-bottom: 1.2rem;
         }
         .section-title {
@@ -368,13 +369,13 @@ export default function RoomPage() {
           padding: 1rem 1.2rem;
           border: 1px solid var(--border);
           border-radius: 12px;
-          background: rgba(255,255,255,0.015);
+          background: rgba(0,0,0,0.012);
           transition: all 0.2s ease;
           cursor: default;
         }
         .amenity-item:hover {
           border-color: var(--border-hover);
-          background: rgba(200,169,110,0.04);
+          background: rgba(180,140,80,0.06);
           transform: translateY(-1px);
         }
         .amenity-dot {
@@ -434,14 +435,14 @@ export default function RoomPage() {
         .booking-card-top {
           padding: 2.2rem 2rem;
           border-bottom: 1px solid var(--border);
-          background: linear-gradient(135deg, rgba(200,169,110,0.06) 0%, transparent 60%);
+          background: linear-gradient(135deg, rgba(180,140,80,0.08) 0%, transparent 60%);
         }
 
         .price-label {
           font-size: 0.65rem;
           letter-spacing: 0.3em;
           text-transform: uppercase;
-          color: var(--gold-dim);
+          color: var(--gold-light);
           margin-bottom: 0.5rem;
         }
         .price-amount {
@@ -482,7 +483,7 @@ export default function RoomPage() {
           border-radius: 12px;
           border: none;
           background: var(--gold);
-          color: var(--ink);
+          color: #ffffff;
           font-family: 'DM Sans', sans-serif;
           font-size: 0.82rem;
           font-weight: 500;
@@ -502,7 +503,7 @@ export default function RoomPage() {
         .book-btn:hover {
           background: var(--gold-light);
           transform: translateY(-1px);
-          box-shadow: 0 8px 32px rgba(200,169,110,0.25);
+          box-shadow: 0 8px 32px rgba(180,140,80,0.25);
         }
         .book-btn:active { transform: translateY(0); }
 
@@ -513,14 +514,14 @@ export default function RoomPage() {
           margin-top: 1rem;
           letter-spacing: 0.04em;
         }
-        .book-note span { color: var(--gold-dim); }
+        .book-note span { color: var(--gold-light); }
 
         /* FOOTER STRIP */
         .trust-strip {
           display: flex; gap: 2rem; align-items: center;
           padding: 1.4rem 2rem;
           border-top: 1px solid var(--border);
-          background: rgba(255,255,255,0.01);
+          background: rgba(0,0,0,0.008);
         }
         .trust-item {
           display: flex; align-items: center; gap: 0.5rem;
@@ -530,7 +531,7 @@ export default function RoomPage() {
         }
         .trust-item-dot {
           width: 4px; height: 4px; border-radius: 50%;
-          background: var(--gold-dim); opacity: 0.6;
+          background: var(--gold-light); opacity: 0.6;
         }
       `}</style>
 <div

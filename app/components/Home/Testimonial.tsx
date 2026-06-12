@@ -27,10 +27,10 @@ export default function Testimonial() {
         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap');
 
         .testimonials {
-          background: #0f0e0c;
+          background: #ffffff;
           padding: 5rem 1.5rem 6rem;
           font-family: 'DM Sans', sans-serif;
-          color: #f0e8da;
+          color: #1a1814;
         }
 
         .testimonials-inner {
@@ -50,7 +50,7 @@ export default function Testimonial() {
         }
 
         .testimonials-subtitle {
-          color: #9c8d7a;
+          color: #7a7066;
           margin-top: 1rem;
         }
 
@@ -67,7 +67,7 @@ export default function Testimonial() {
         }
 
         .scroll-row::-webkit-scrollbar-thumb {
-          background: rgba(200,169,110,0.3);
+          background: rgba(180,140,80,0.35);
           border-radius: 10px;
         }
 
@@ -76,8 +76,8 @@ export default function Testimonial() {
           max-width: 360px;
           scroll-snap-align: start;
 
-          background: rgba(255,255,255,0.04);
-          border: 1px solid rgba(200,169,110,0.12);
+          background: #faf8f4;
+          border: 1px solid rgba(180,140,80,0.15);
           border-radius: 22px;
           padding: 1.8rem;
 
@@ -87,12 +87,12 @@ export default function Testimonial() {
 
         .testimonial-card:hover {
           transform: translateY(-4px);
-          border-color: rgba(200,169,110,0.3);
-          background: rgba(255,255,255,0.06);
+          border-color: rgba(180,140,80,0.35);
+          background: #f5f1e9;
         }
 
         .testimonial-text {
-          color: #cfc2ae;
+          color: #5c5349;
           line-height: 1.8;
           font-size: 0.95rem;
         }
@@ -101,12 +101,12 @@ export default function Testimonial() {
           margin-top: 1.5rem;
           font-family: 'Cormorant Garamond', serif;
           font-size: 1.2rem;
-          color: #f0e8da;
+          color: #1a1814;
         }
 
         .testimonial-role {
           font-size: 0.85rem;
-          color: #9c8d7a;
+          color: #7a7066;
         }
       `}</style>
 
@@ -116,7 +116,7 @@ export default function Testimonial() {
           {/* HEADER */}
           <div className="testimonials-header">
             <h2 className="testimonials-title">
-              What Our <span style={{ color: "#c8a96e" }}>Guests Say</span>
+              What Our <span style={{ color: "#a8895f" }}>Guests Say</span>
             </h2>
             <p className="testimonials-subtitle">
               Real experiences from people who stayed at Akshesh Hotel.

@@ -62,16 +62,16 @@ export default function InstallButton() {
         }}
       >
         {/* Top accent bar */}
-        <div className="h-1 w-full bg-gradient-to-r from-amber-400 via-#bfb09d-300 to-amber-500" />
+        <div className="h-1 w-full bg-[#bfb09d]" />
 
         <div className="px-6 py-5">
           {/* Icon + Text */}
           <div className="flex items-center gap-4 mb-5">
-            <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gradient-to-br from-amber-400 to-#bfb09d-500 flex items-center justify-center shadow-md">
+            <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-[#bfb09d] flex items-center justify-center shadow-md">
               <FaMobileAlt className="text-white text-xl" />
             </div>
             <div>
-              <p className="text-xs font-semibold uppercase tracking-widest text-amber-500 mb-0.5">
+              <p className="text-xs font-semibold uppercase tracking-widest text-[#a8895f] mb-0.5">
                 Add to Home Screen
               </p>
               <h2 className="text-gray-900 font-bold text-base leading-tight">
@@ -97,7 +97,8 @@ export default function InstallButton() {
             </button>
             <button
               onClick={installApp}
-              className="flex-1 py-2.5 rounded-xl bg-[#bfb09d]"
+              className="flex-1 py-2.5 rounded-xl bg-[#bfb09d] text-white text-sm font-medium
+                hover:bg-[#a8895f] active:scale-95 transition-all duration-150"
             >
               Install
             </button>

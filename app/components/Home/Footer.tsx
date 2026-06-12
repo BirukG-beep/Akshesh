@@ -9,10 +9,11 @@ export default function Footer() {
         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap');
 
         .footer {
-          background: #0f0e0c;
-          color: #f0e8da;
+          background: #ffffff;
+          color: #1a1814;
           padding: 5rem 1.5rem 2rem;
           font-family: 'DM Sans', sans-serif;
+          border-top: 1px solid rgba(180,140,80,0.15);
         }
 
         .footer-inner {
@@ -39,7 +40,7 @@ export default function Footer() {
         }
 
         .brand-desc {
-          color: #9c8d7a;
+          color: #7a7066;
           margin-top: 1rem;
           line-height: 1.7;
         }
@@ -48,12 +49,12 @@ export default function Footer() {
           font-size: 0.85rem;
           letter-spacing: 0.2em;
           text-transform: uppercase;
-          color: #c8a96e;
+          color: #a8895f;
           margin-bottom: 1rem;
         }
 
         .link {
-          color: #9c8d7a;
+          color: #7a7066;
           font-size: 0.95rem;
           margin-bottom: 0.6rem;
           cursor: pointer;
@@ -61,7 +62,7 @@ export default function Footer() {
         }
 
         .link:hover {
-          color: #e2c99a;
+          color: #b1813f;
           transform: translateX(3px);
         }
 
@@ -69,20 +70,20 @@ export default function Footer() {
           display: flex;
           align-items: center;
           gap: 0.6rem;
-          color: #9c8d7a;
+          color: #7a7066;
           margin-bottom: 0.8rem;
           font-size: 0.95rem;
         }
 
         .bottom {
           margin-top: 4rem;
-          border-top: 1px solid rgba(200,169,110,0.15);
+          border-top: 1px solid rgba(180,140,80,0.18);
           padding-top: 1.5rem;
           display: flex;
           flex-direction: column;
           gap: 1rem;
           text-align: center;
-          color: #9c8d7a;
+          color: #7a7066;
           font-size: 0.85rem;
         }
 
@@ -95,7 +96,7 @@ export default function Footer() {
         }
 
         .footer-accent {
-          color: #c8a96e;
+          color: #a8895f;
         }
       `}</style>
 
@@ -165,7 +166,26 @@ export default function Footer() {
           <div className="bottom">
             <p>
               © {new Date().getFullYear()}{" "}
-              <span className="footer-accent">Akshesh Hotel</span>. All rights reserved.
+              <span className="footer-accent">Akshesh Hotel</span>. All rights reserved. <a
+  href="https://t.me/nathan2127g"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="footer-accent"
+  style={{
+    textDecoration: 'none',
+    transition: 'all 0.2s ease',
+  }}
+  onMouseOver={(e) => {
+    e.currentTarget.style.textDecoration = 'underline';
+    e.currentTarget.style.opacity = '0.9';
+  }}
+  onMouseOut={(e) => {
+    e.currentTarget.style.textDecoration = 'none';
+    e.currentTarget.style.opacity = '1';
+  }}
+> Developed By 
+  <span className="text-orange-500"> Nathnael Getachew</span>
+</a>
             </p>
 
             <div style={{ display: "flex", gap: "1.5rem" }}>

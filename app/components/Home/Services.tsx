@@ -33,10 +33,10 @@ export default function ServicesPage() {
         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap');
 
         .services-section {
-          background: #0f0e0c;
+          background: #ffffff;
           padding: 5rem 1.5rem 6rem;
           font-family: 'DM Sans', sans-serif;
-          color: #f0e8da;
+          color: #1a1814;
         }
 
         .services-inner {
@@ -56,7 +56,7 @@ export default function ServicesPage() {
         }
 
         .services-subtitle {
-          color: #9c8d7a;
+          color: #7a7066;
           max-width: 600px;
           margin: 1rem auto 0;
           line-height: 1.7;
@@ -81,14 +81,14 @@ export default function ServicesPage() {
           height: 520px;
           border-radius: 24px;
           overflow: hidden;
-          border: 1px solid rgba(200,169,110,0.15);
+          border: 1px solid rgba(180,140,80,0.18);
         }
 
         .services-image img {
           width: 100%;
           height: 100%;
           object-fit: cover;
-          filter: brightness(0.85);
+          filter: brightness(0.97);
         }
 
         .services-badge {
@@ -99,8 +99,8 @@ export default function ServicesPage() {
           height: 180px;
           border-radius: 20px;
           overflow: hidden;
-          border: 2px solid rgba(200,169,110,0.25);
-          box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+          border: 2px solid rgba(180,140,80,0.3);
+          box-shadow: 0 20px 60px rgba(0,0,0,0.12);
         }
 
         .services-badge img {
@@ -115,39 +115,39 @@ export default function ServicesPage() {
           gap: 1rem;
           padding: 1.4rem;
           border-radius: 18px;
-          background: rgba(255,255,255,0.04);
-          border: 1px solid rgba(200,169,110,0.1);
+          background: #faf8f4;
+          border: 1px solid rgba(180,140,80,0.15);
           transition: 0.3s ease;
         }
 
         .service-item:hover {
-          background: rgba(255,255,255,0.07);
+          background: #f5f1e9;
           transform: translateX(5px);
-          border-color: rgba(200,169,110,0.25);
+          border-color: rgba(180,140,80,0.35);
         }
 
         .service-icon {
           width: 44px;
           height: 44px;
           border-radius: 12px;
-          background: rgba(200,169,110,0.08);
-          border: 1px solid rgba(200,169,110,0.15);
+          background: rgba(180,140,80,0.08);
+          border: 1px solid rgba(180,140,80,0.2);
           display: flex;
           align-items: center;
           justify-content: center;
-          color: #c8a96e;
+          color: #a8895f;
           flex-shrink: 0;
         }
 
         .service-title {
           font-size: 1.1rem;
           font-weight: 500;
-          color: #f0e8da;
+          color: #1a1814;
         }
 
         .service-desc {
           font-size: 0.9rem;
-          color: #9c8d7a;
+          color: #7a7066;
           margin-top: 0.3rem;
           line-height: 1.6;
         }
@@ -159,7 +159,7 @@ export default function ServicesPage() {
           {/* HEADER */}
           <div className="services-header">
             <h2 className="services-title">
-              Our <span style={{ color: "#c8a96e" }}>Services</span>
+              Our <span style={{ color: "#a8895f" }}>Services</span>
             </h2>
             <p className="services-subtitle">
               Everything you need for a comfortable and relaxing stay at Akshesh Hotel.

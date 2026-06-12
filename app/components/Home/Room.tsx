@@ -40,10 +40,10 @@ export default function RoomCards() {
         @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=DM+Sans:wght@300;400;500&display=swap');
 
         .room-section {
-          background: #0f0e0c;
+          background: #ffffff;
           padding: 5rem 1.5rem 6rem;
           font-family: 'DM Sans', sans-serif;
-          color: #f0e8da;
+          color: #1a1814;
         }
 
         .room-inner {
@@ -60,11 +60,11 @@ export default function RoomCards() {
           font-family: 'Cormorant Garamond', serif;
           font-size: clamp(2.4rem, 5vw, 3.6rem);
           font-weight: 300;
-          color: #f0e8da;
+          color: #1a1814;
         }
 
         .room-subtitle {
-          color: #9c8d7a;
+          color: #7a7066;
           max-width: 600px;
           margin: 1rem auto 0;
           line-height: 1.7;
@@ -85,8 +85,8 @@ export default function RoomCards() {
         }
 
         .room-card {
-          background: #1e1c19;
-          border: 1px solid rgba(200,169,110,0.12);
+          background: #faf8f4;
+          border: 1px solid rgba(180,140,80,0.15);
           border-radius: 22px;
           overflow: hidden;
           transition: 0.3s ease;
@@ -94,7 +94,7 @@ export default function RoomCards() {
 
         .room-card:hover {
           transform: translateY(-4px);
-          border-color: rgba(200,169,110,0.3);
+          border-color: rgba(180,140,80,0.35);
         }
 
         .room-image {
@@ -121,12 +121,12 @@ export default function RoomCards() {
           font-family: 'Cormorant Garamond', serif;
           font-size: 1.5rem;
           margin-bottom: 0.6rem;
-          color: #f0e8da;
+          color: #1a1814;
         }
 
         .room-guests {
           font-size: 0.85rem;
-          color: #9c8d7a;
+          color: #7a7066;
           display: flex;
           align-items: center;
           gap: 0.5rem;
@@ -138,7 +138,7 @@ export default function RoomCards() {
           flex-direction: column;
           gap: 0.6rem;
           font-size: 0.85rem;
-          color: #b9a88e;
+          color: #8a7c68;
         }
 
         .room-btn {
@@ -146,9 +146,9 @@ export default function RoomCards() {
           width: 100%;
           padding: 0.9rem;
           border-radius: 14px;
-          border: 1px solid rgba(200,169,110,0.25);
-          background: rgba(200,169,110,0.08);
-          color: #e2c99a;
+          border: 1px solid rgba(180,140,80,0.3);
+          background: rgba(180,140,80,0.08);
+          color: #a8895f;
           display: flex;
           justify-content: center;
           align-items: center;
@@ -158,7 +158,7 @@ export default function RoomCards() {
         }
 
         .room-btn:hover {
-          background: rgba(200,169,110,0.15);
+          background: rgba(180,140,80,0.15);
         }
       `}</style>
 

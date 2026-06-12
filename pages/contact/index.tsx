@@ -30,12 +30,12 @@ export default function ContactPage() {
 
       <style>{`
         :root {
-          --gold: #c8a96e;
-          --ink: #0f0e0c;
-          --surface: #1e1c19;
-          --border: rgba(200,169,110,0.15);
-          --text: #f0e8da;
-          --muted: #9c8d7a;
+          --gold: #a8895f;
+          --ink: #ffffff;
+          --surface: #faf8f4;
+          --border: rgba(180,140,80,0.18);
+          --text: #1a1814;
+          --muted: #7a7066;
         }
 
         body {
@@ -102,7 +102,7 @@ export default function ContactPage() {
           width: 100%;
           padding: 1rem;
           margin-bottom: 1rem;
-          background: rgba(255,255,255,0.03);
+          background: #ffffff;
           border: 1px solid var(--border);
           border-radius: 10px;
           color: var(--text);
@@ -122,7 +122,7 @@ export default function ContactPage() {
           width: 100%;
           padding: 1rem;
           background: var(--gold);
-          color: #000;
+          color: #fff;
           border: none;
           border-radius: 10px;
           font-weight: 500;
@@ -144,6 +144,7 @@ export default function ContactPage() {
           font-family: 'Cormorant Garamond', serif;
           font-weight: 300;
           margin-bottom: 0.4rem;
+          color: var(--text);
         }
 
         .info p {
@@ -178,9 +179,9 @@ export default function ContactPage() {
   <style jsx>{`
     .nav-wrap {
       padding: 0.2rem 1.2rem;
-      border: 1px solid rgba(200, 169, 110, 0.12);
+      border: 1px solid rgba(180, 140, 80, 0.18);
       border-radius: 999px;
-      background: rgba(15, 14, 12, 0.4);
+      background: rgba(255, 255, 255, 0.7);
       backdrop-filter: blur(18px);
       width: fit-content;
       margin: 0 auto 2rem;
@@ -189,6 +190,7 @@ export default function ContactPage() {
       left: 50%;
       transform: translateX(-50%);
       z-index: 10;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
     }
 
     .nav-link {
@@ -196,7 +198,7 @@ export default function ContactPage() {
       font-size: 0.78rem;
       letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: rgba(255, 255, 255, 0.65);
+      color: rgba(26, 24, 20, 0.65);
       transition: all 0.25s ease;
       cursor: pointer;
       background: none;
@@ -207,7 +209,7 @@ export default function ContactPage() {
     }
 
     .nav-link:hover {
-      color: #e2c99a;
+      color: #a8895f;
       transform: translateY(-1px);
     }
 
@@ -218,7 +220,7 @@ export default function ContactPage() {
       bottom: -6px;
       width: 0%;
       height: 1px;
-      background: #c8a96e;
+      background: #a8895f;
       transition: width 0.3s ease;
     }
 
