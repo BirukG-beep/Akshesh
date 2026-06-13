@@ -19,23 +19,57 @@ export default function ContactPage() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    console.log(form);
-    alert("Message sent (demo)");
-  };
+  const [loading, setLoading] = useState(false);
+const [status, setStatus] = useState("");
+
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+
+  try {
+    setLoading(true);
+    setStatus("");
+
+    const res = await fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(form),
+    });
+
+    const data = await res.json();
+
+    if (!res.ok) {
+      throw new Error(data.error || "Something went wrong");
+    }
+
+    setStatus("Message sent successfully!");
+
+    setForm({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+    });
+  } catch (error) {
+    console.error(error);
+    setStatus("Failed to send message.");
+  } finally {
+    setLoading(false);
+  }
+};
 
   return (
     <>
 
       <style>{`
         :root {
-          --gold: #a8895f;
-          --ink: #ffffff;
-          --surface: #faf8f4;
-          --border: rgba(180,140,80,0.18);
-          --text: #1a1814;
-          --muted: #7a7066;
+          --gold: #c8a96e;
+          --ink: #0f0e0c;
+          --surface: #1e1c19;
+          --border: rgba(200,169,110,0.15);
+          --text: #f0e8da;
+          --muted: #9c8d7a;
         }
 
         body {
@@ -102,7 +136,7 @@ export default function ContactPage() {
           width: 100%;
           padding: 1rem;
           margin-bottom: 1rem;
-          background: #ffffff;
+          background: rgba(255,255,255,0.03);
           border: 1px solid var(--border);
           border-radius: 10px;
           color: var(--text);
@@ -122,7 +156,7 @@ export default function ContactPage() {
           width: 100%;
           padding: 1rem;
           background: var(--gold);
-          color: #fff;
+          color: #000;
           border: none;
           border-radius: 10px;
           font-weight: 500;
@@ -144,7 +178,6 @@ export default function ContactPage() {
           font-family: 'Cormorant Garamond', serif;
           font-weight: 300;
           margin-bottom: 0.4rem;
-          color: var(--text);
         }
 
         .info p {
@@ -179,9 +212,9 @@ export default function ContactPage() {
   <style jsx>{`
     .nav-wrap {
       padding: 0.2rem 1.2rem;
-      border: 1px solid rgba(180, 140, 80, 0.18);
+      border: 1px solid rgba(200, 169, 110, 0.12);
       border-radius: 999px;
-      background: rgba(255, 255, 255, 0.7);
+      background: rgba(15, 14, 12, 0.4);
       backdrop-filter: blur(18px);
       width: fit-content;
       margin: 0 auto 2rem;
@@ -190,7 +223,6 @@ export default function ContactPage() {
       left: 50%;
       transform: translateX(-50%);
       z-index: 10;
-      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
     }
 
     .nav-link {
@@ -198,7 +230,7 @@ export default function ContactPage() {
       font-size: 0.78rem;
       letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: rgba(26, 24, 20, 0.65);
+      color: rgba(255, 255, 255, 0.65);
       transition: all 0.25s ease;
       cursor: pointer;
       background: none;
@@ -209,7 +241,7 @@ export default function ContactPage() {
     }
 
     .nav-link:hover {
-      color: #a8895f;
+      color: #e2c99a;
       transform: translateY(-1px);
     }
 
@@ -220,7 +252,7 @@ export default function ContactPage() {
       bottom: -6px;
       width: 0%;
       height: 1px;
-      background: #a8895f;
+      background: #c8a96e;
       transition: width 0.3s ease;
     }
 
@@ -271,9 +303,26 @@ export default function ContactPage() {
               onChange={handleChange}
             />
 
-            <button className="btn" type="submit">
-              Send Message
-            </button>
+            <button
+  className="btn"
+  type="submit"
+  disabled={loading}
+>
+  {loading ? "Sending..." : "Send Message"}
+</button>
+{status && (
+  <p
+    style={{
+      marginTop: "1rem",
+      color: status.includes("successfully")
+        ? "#c8a96e"
+        : "#ff6b6b",
+      textAlign: "center",
+    }}
+  >
+    {status}
+  </p>
+)}
           </form>
         </div>
 
@@ -291,7 +340,7 @@ export default function ContactPage() {
 
           <div className="info">
             <h3>Location</h3>
-            <p>Addis Ababa, Ethiopia</p>
+            <p>Bishfotu, Ethiopia</p>
           </div>
 
           <div className="divider" />
